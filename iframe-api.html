@@ -76,7 +76,7 @@
             var state = player.getPlayerState()
             if(state==1 && !isScrolledIntoView('#player')){
                 player.pauseVideo();
-            }else{
+            }else if(isScrolledIntoView('#player')){
                 player.playVideo();
             }
             console.log(isScrolledIntoView('#player'));
